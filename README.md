@@ -809,7 +809,12 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 @zullaikhaa ➜ /workspaces/OSGepuk/nodejs-app (main) $ curl http://localhost:3000/random
 Server Error
 ```
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+2. Show the instruction needed to make this work. ***(1 mark)*** 
+```bash
+1. Create a new bridge network
+2. Connect the MySQL container to the new bridge network
+3. Connect the Node.js container to the new bridge network - First, stop and remove the existing nodejs-container, then, run the Node.js container and connect it to the myappnet network
+```
 
 
 
