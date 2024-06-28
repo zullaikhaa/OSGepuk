@@ -30,7 +30,7 @@ https://github.com/zullaikhaa/OSGepuk
 ```
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
-2 folder and 1 file
+ 4 folder and 1 file
 ```
 
 
@@ -804,7 +804,11 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
+```bash
+@zullaikhaa ➜ /workspaces/OSGepuk/nodejs-app (main) $ curl http://localhost:3000/random
+Server Error
+```
 2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
 
