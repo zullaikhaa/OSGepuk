@@ -808,6 +808,7 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 ```bash
 @zullaikhaa ➜ /workspaces/OSGepuk/nodejs-app (main) $ curl http://localhost:3000/random
 Server Error
+This error occurs because the Node.js application cannot connect to the MySQL database.
 ```
 2. Show the instruction needed to make this work. ***(1 mark)*** 
 ```bash
