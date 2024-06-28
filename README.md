@@ -540,7 +540,12 @@ drwxrwxrwx+ 2 codespace codespace 4096 Jun 28 11:55 .
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+```bash
+@zullaikhaa ➜ /workspaces/OSGepuk/myroot (main) $ sudo chown -R codespace:codespace myroot
+chown: cannot access 'myroot': No such file or directory
+@zullaikhaa ➜ /workspaces/OSGepuk/myroot (main) $ ls -l myroot
+ls: cannot access 'myroot': No such file or directory
+```
 
 ## You are on your own, create your own static webpage
 
