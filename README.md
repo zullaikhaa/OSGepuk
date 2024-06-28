@@ -661,7 +661,7 @@ PING c2 (172.20.0.3): 56 data bytes
 ```
 2. What is different from the previous ping in the section above? ***(1 mark)*** 
 ```bash
-__Fill answer here__.
+Running through 'docker exec c1 ping c2' without any special network setup, Docker tries to ping from container c1 to c2 using their default isolated networks. These networks are like separate rooms where containers live, and they can't talk to each other directly unless you open a door (like exposing ports) between them. This new setup (mybridge network) simplifies communication between c1 and c2 by putting them in the same virtual space where they can easily interact, just like being in the same room where you can talk to someone nearby without any barriers in between.
 ```
 ## Intermediate Level (10 marks bonus)
 
