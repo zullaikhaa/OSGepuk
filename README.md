@@ -356,7 +356,12 @@ The ls command in Linux is used for listing files and directories, providing a b
 ```bash
 2844.742 MHz
 ```
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
+```bash
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                               
+  20606 codespa+  20   0   21.5g 329068  49792 S   1.0   4.1   0:11.37 node                                  
+   2030 codespa+  20   0 1331844 109464  45440 S   0.7   1.3   0:13.71 node 
+ ```
 
 ## Running your own container instance.
 
@@ -412,6 +417,89 @@ CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                      
 f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago             romantic_jackson
 
 @joeynor ➜ /workspaces/OSProject (main) $ docker rm romantic_jackson
+```
+```bash
+___ Happening in the terminal ___
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker pull debian
+Using default tag: latest
+latest: Pulling from library/debian
+fea1432adf09: Pull complete 
+Digest: sha256:a92ed51e0996d8e9de041ca05ce623d2c491444df6a535a566dabd5cb8336946
+Status: Downloaded newer image for debian:latest
+docker.io/library/debian:latest
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker run --detach -it debian
+fe44348d4108c4dd280eb6a262b8e43817ec7361978b1faafa0f654501a37427
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS          PORTS     NAMES
+fe44348d4108   debian    "bash"    27 seconds ago   Up 25 seconds             confident_driscoll
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker exec -i -t confident_driscoll /bin/bash
+root@fe44348d4108:/# apt-get update
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8786 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [13.8 kB]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [164 kB]
+Fetched 9218 kB in 1s (8219 kB/s)                         
+Reading package lists... Done
+root@fe44348d4108:/# apt-get install nano
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libgpm2 libncursesw6
+Suggested packages:
+  gpm hunspell
+The following NEW packages will be installed:
+  libgpm2 libncursesw6 nano
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 837 kB of archives.
+After this operation, 3339 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://deb.debian.org/debian bookworm/main amd64 libncursesw6 amd64 6.4-4 [134 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 nano amd64 7.2-1 [689 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libgpm2 amd64 1.20.7-10+b1 [14.2 kB]
+Fetched 837 kB in 0s (27.4 MB/s)    
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libncursesw6:amd64.
+(Reading database ... 6090 files and directories currently installed.)
+Preparing to unpack .../libncursesw6_6.4-4_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.4-4) ...
+Selecting previously unselected package nano.
+Preparing to unpack .../archives/nano_7.2-1_amd64.deb ...
+Unpacking nano (7.2-1) ...
+Selecting previously unselected package libgpm2:amd64.
+Preparing to unpack .../libgpm2_1.20.7-10+b1_amd64.deb ...
+Unpacking libgpm2:amd64 (1.20.7-10+b1) ...
+Setting up libgpm2:amd64 (1.20.7-10+b1) ...
+Setting up libncursesw6:amd64 (6.4-4) ...
+Setting up nano (7.2-1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+Processing triggers for libc-bin (2.36-9+deb12u7) ...
+root@fe44348d4108:/# cd /root
+root@fe44348d4108:~# nano helloworld.txt
+root@fe44348d4108:~# exit
+exit
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
+fe44348d4108   debian    "bash"    4 minutes ago   Up 4 minutes             confident_driscoll
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker stop confident_driscoll
+
+confident_driscoll
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ 
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS                       PORTS     NAMES
+fe44348d4108   debian    "bash"    5 minutes ago   Exited (137) 7 seconds ago             confident_driscoll
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker restart confident_driscoll
+confident_driscoll
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker stop confident_driscoll
+confident_driscoll
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS                       PORTS     NAMES
+fe44348d4108   debian    "bash"    5 minutes ago   Exited (137) 6 seconds ago             confident_driscoll
+@zullaikhaa ➜ /workspaces/OSGepuk (main) $ docker rm confident_driscoll
+confident_driscoll
 ```
 
 ***Questions:***
