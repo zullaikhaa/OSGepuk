@@ -644,9 +644,25 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
-
+1. Are you able to ping? Show your output . ***(1 mark)*** 
+```bash
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.148 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.101 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.070 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.074 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.065 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.075 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.086 ms
+```
+2. What is different from the previous ping in the section above? ***(1 mark)*** 
+```bash
+__Fill answer here__.
+```
 ## Intermediate Level (10 marks bonus)
 
 ### Node.js and MySQL in Docker Containers
