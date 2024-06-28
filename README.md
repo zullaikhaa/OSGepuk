@@ -578,12 +578,12 @@ The user is workspace, and the group is myroot.
 ```
 2. What port is the apache web server running. ***(1 mark)*** 
 ```bash
-CONTAINER ID   IMAGE     COMMAND              CREATED         STATUS         PORTS                                    NAMES
+CONTAINER ID   IMAGE     COMMAND              CREATED         STATUS         PORTS                                   NAMES
 c0311ef83ecc   httpd     "httpd-foreground"   3 minutes ago   Up 3 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   agitated_allen
 ```
 3. What port is open for http protocol on the host machine? ***(1 mark)*** 
 ```bash
-CONTAINER ID   IMAGE     COMMAND              CREATED         STATUS         PORTS                                    NAMES
+CONTAINER ID   IMAGE     COMMAND              CREATED         STATUS         PORTS                                   NAMES
 c0311ef83ecc   httpd     "httpd-foreground"   3 minutes ago   Up 3 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   agitated_allen
 ```
 
