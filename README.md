@@ -26,11 +26,11 @@ Team Mates:
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
 ```bash
-__https://github.com/zullaikhaa/OSGepuk__.
+https://github.com/zullaikhaa/OSGepuk
 ```
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
-__1 folder and 1 file__.
+1 folder and 1 file
 ```
 
 
@@ -65,15 +65,15 @@ __1 folder and 1 file__.
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
 ``` bash
-__Linux OS__.
+Linux OS
 ```
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 ```bash
-__2-core, 8GB RAM, 32GB and 4-core, 16GB RAM, 32GB__.
+2-core, 8GB RAM, 32GB and 4-core, 16GB RAM, 32GB
 ```
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ```bash
-__So that it is uploaded to the GitHub repository__.
+So that it is uploaded to the GitHub repository
 ```
 
 ## Exploring the Terminal
@@ -93,11 +93,11 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 1. Run the command **pwd** . ***(1 mark)*** 
 ```bash
-__/workspaces/OSGepuk__.
+/workspaces/OSGepuk
 ```
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
 ```bash
-__root:x:0:0:root:/root:/bin/bash
+root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
@@ -121,21 +121,21 @@ systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/n
 systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
-sshd:x:105:65534::/run/sshd:/usr/sbin/nologin__.
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 ```
 3. Run the command **df** . ***(1 mark)*** 
 ```bash
-__Filesystem     1K-blocks     Used Available Use% Mounted on
+Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10381420  20772164  34% /
 tmpfs              65536        0     65536   0% /dev
 shm                65536        8     65528   1% /dev/shm
 /dev/root       30298176 23997768   6284024  80% /vscode
 /dev/sda1       46127956      148  43752232   1% /tmp
-/dev/loop3      32847680 10381420  20772164  34% /workspaces__.
+/dev/loop3      32847680 10381420  20772164  34% /workspaces
 ```
 4. Run the command **du** . ***(1 mark)*** 
 ```bash
-__1972    ./images
+1972    ./images
 8       ./.git/logs/refs/heads
 8       ./.git/logs/refs/remotes/origin
 12      ./.git/logs/refs/remotes
@@ -224,7 +224,7 @@ __1972    ./images
 28      ./.git/refs
 4       ./.git/branches
 2652    ./.git
-4648    .__.
+4648    .
 ```
 5. Run the command **ls** . ***(1 mark)*** 
 ```bash
@@ -232,22 +232,22 @@ README.md  images
 ```
 6. Run the command **ls -asl** . ***(1 mark)*** 
 ```bash
-____total 40
+total 40
  4 drwxrwxrwx+ 4 codespace root  4096 Jun 28 10:18 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jun 28 10:18 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jun 28 10:32 .git
 24 -rw-rw-rw-  1 codespace root 21708 Jun 28 10:37 README.md
- 4 drwxrwxrwx+ 2 codespace root  4096 Jun 28 10:18 images__.__.
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jun 28 10:18 images
 ```
 7. Run the command **free -h** . ***(1 mark)*** 
 ```bash
-__            total        used        free      shared  buff/cache   available
+              total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.6Gi       952Mi        68Mi       5.2Gi       5.8Gi
-Swap:            0B          0B          0B__.
+Swap:            0B          0B          0B
 ```
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
 ```bash
-__processor       : 0
+processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
 model           : 1
@@ -301,11 +301,11 @@ TLB size        : 2560 4K pages
 clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
-power management:__.
+power management:
 ```
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
 ```bash
-__top - 10:43:03 up  2:55,  0 users,  load average: 0.10, 0.19, 0.22
+top - 10:43:03 up  2:55,  0 users,  load average: 0.10, 0.19, 0.22
 Tasks:  27 total,   1 running,  26 sleeping,   0 stopped,   0 zombie
 top - 10:49:46 up  3:02,  0 users,  load average: 0.32, 0.20, 0.20
 Tasks:  41 total,   1 running,  40 sleeping,   0 stopped,   0 zombie
@@ -318,21 +318,20 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5756.1 avail Mem
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                               
   20606 codespa+  20   0   21.5g 329068  49792 S   1.0   4.1   0:11.37 node                                  
-   2030 codespa+  20   0 1331844 109464  45440 S   0.7   1.3   0:13.71 node__.
+   2030 codespa+  20   0 1331844 109464  45440 S   0.7   1.3   0:13.71 node
 ```
 10. Run the command **uname -a**. ***(1 mark)*** 
 ```bash
-__Linux codespaces-1565aa 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
+Linux codespaces-1565aa 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 11. What is the available free memory in the system. ***(1 mark)*** 
 ```bash
-__            total        used        free      shared  buff/cache   available
+             total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.6Gi       952Mi        68Mi       5.2Gi       5.8Gi
-Swap:            0B          0B          0B__.
+Swap:            0B          0B          0B
 ```
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
 ```bash
-__
 Filesystem      Size  Used Avail Use% Mounted on
 overlay          32G   10G   20G  34% /
 tmpfs            64M     0   64M   0% /dev
@@ -340,18 +339,23 @@ shm              64M  8.0K   64M   1% /dev/shm
 /dev/root        29G   23G  6.0G  80% /vscode
 /dev/sda1        44G  216K   42G   1% /tmp
 /dev/loop3       32G   10G   20G  34% /workspaces
-__.
 ```
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
 ```bash
- __Ubuntu Linux version is 22.04.1 and hardware architecture is x86_64__.
+ Ubuntu Linux version is 22.04.1 and hardware architecture is x86_64
 ```
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
 ```bash
-__The ls command in Linux is used for listing files and directories, providing a basic output with just names. On the other hand, ls -asl offers a more detailed listing, including file permissions, owner, group, size, and modification date.__.
+The ls command in Linux is used for listing files and directories, providing a basic output with just names. On the other hand, ls -asl offers a more detailed listing, including file permissions, owner, group, size, and modification date.
 ```
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)***
+```bash
+2560 4K pages
+```
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+```bash
+2844.742 MHz
+```
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
 
 ## Running your own container instance.
