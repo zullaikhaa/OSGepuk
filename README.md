@@ -507,6 +507,7 @@ confident_driscoll
 1. Are files in the container persistent. Why not?. ***(1 mark)*** 
 ```bash
 Files in a container are not persistent by default because containers are designed to be temporary and disposable
+```
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
 ```bash
 Yes, you can run multiple instances of Debian Linux using Docker. Each instance runs as a separate container
