@@ -30,7 +30,7 @@ https://github.com/zullaikhaa/OSGepuk
 ```
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
-1 folder and 1 file
+2 folder and 1 file
 ```
 
 
