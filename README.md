@@ -30,7 +30,7 @@ https://github.com/zullaikhaa/OSGepuk
 ```
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
- 4 folder and 1 file
+ 3 folders and 11 files
 ```
 
 
@@ -69,7 +69,8 @@ Linux OS
 ```
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 ```bash
-2-core, 8GB RAM, 32GB and 4-core, 16GB RAM, 32GB
+2-core, 8GB RAM, 32GB
+4-core, 16GB RAM, 32GB
 ```
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ```bash
