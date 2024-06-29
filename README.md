@@ -1,8 +1,8 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: __Gepuk__. 
 
-Section: __Fill your class section__. 
+Section: __3__. 
 
 Team Mates:
 1. __Nur Farisya Adila Binti Razaly__ and __2212186__
